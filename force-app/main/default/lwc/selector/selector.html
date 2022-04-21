@@ -1,0 +1,59 @@
+<template>
+    <div class="wrapper">
+        <header class="header">Available Bikes for {name}</header>
+        <section class="content">
+            <div class="columns">
+                <main class="main">
+                    <c-list onproductselected={handleProductSelected}></c-list>
+                    <p id="action" class="slds-box slds-text-heading_small">Action icons represent actions a user can
+                        take. The default
+                        size of action icons are larger than the others. <br /><br />
+                        <lightning-icon icon-name="action:approval" alternative-text="Approved" title="Approved">
+                        </lightning-icon>
+                        <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete">
+                        </lightning-icon>
+                        <lightning-icon icon-name="action:new_note" alternative-text="New note" title="New note">
+                        </lightning-icon>
+                        <lightning-icon icon-name="action:preview" alternative-text="Preview" title="Preview">
+                        </lightning-icon>
+                    </p>
+                    <lightning-card title="Hello">
+                        <lightning-button label="New" slot="actions"></lightning-button>
+                        <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+                        <p slot="footer">Card Footer</p>
+                    </lightning-card>
+
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <span>1</span>
+                        </div>
+                        <div class="slds-col">
+                            <span>2</span>
+                        </div>
+                        <div class="slds-col">
+                            <span>3</span>
+                        </div>
+                        <div class="slds-col">
+                            <span>4</span>
+                        </div>
+                    </div>
+
+                    <button class="slds-button">Button</button>
+                    <button class="slds-button slds-button_neutral">Neutral Button</button>
+                    <button class="slds-button slds-button_brand">Brand Button</button>
+                    <button class="slds-button slds-button_outline-brand">Outline Brand Button</button>
+                    <button class="slds-button slds-button_destructive">Destructive Button</button>
+                    <button class="slds-button slds-button_text-destructive">Text Destructive Button</button>
+                    <button class="slds-button slds-button_success">Success Button</button>
+
+
+                </main>
+                <aside class="sidebar-second">
+                    <c-detail product-id={selectedProductId}></c-detail>
+                </aside>
+            </div>
+        </section>
+    </div>
+
+
+</template>

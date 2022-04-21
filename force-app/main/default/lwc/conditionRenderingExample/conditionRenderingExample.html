@@ -1,0 +1,13 @@
+<template>
+    <template if:true={flag}>
+        <div style="background-color: red;"> I am here </div>
+    </template>
+    <lightning-input type="checkbox" label="Select to show div" name="input1" onchange={checkBoxOnChanged}></lightning-input>
+
+    <template iterator:item={data}>
+        <p key={item.value.gender}>
+            <lightning-badge label= {item.value.name}></lightning-badge>
+        </p>
+    </template>
+
+</template>

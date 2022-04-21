@@ -1,0 +1,5 @@
+<apex:page >
+        <apex:stylesheet value="{!URLFOR($Resource.visualPage,'visualPage.css')}"/>
+    
+    <div >wanghozngea</div>
+</apex:page>

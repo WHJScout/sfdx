@@ -1,0 +1,1 @@
+SELECT AccountId, count(ID) FROM Contact where Active__c = true group by AccountId 

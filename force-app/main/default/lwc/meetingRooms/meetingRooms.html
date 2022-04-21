@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Hello">
+
+        <lightning-layout>
+            <lightning-layout-item size="4" padding="around-small">
+                <ul class="slds-m-around_medium">
+                    <template iterator:it={meetingRoomsInfo}>
+                        <li key={it.value.roomName} style="padding: 10px;">
+                            <c-meeting-room meeting-room-info={it.value} 
+                                are-details-visible> </c-meeting-room>
+                            <!-- <c-meeting-room are-details-visible>
+                                <lightning-tile label={it.value.roomName} slot='roomInfo'>
+                                    <p class="slds-truncate" title={it.value.rommCapacity}>Romm Capacity is
+                                        {it.value.roomCapacity}</p>
+                                </lightning-tile>
+        
+                                <div>addition mackup</div>
+                            </c-meeting-room> -->
+                        </li>
+                    </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="8" padding="around-small">
+                You have selected : {selectedMeetingRoom} and cap is : {selectedMeetingRoom}
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

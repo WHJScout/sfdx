@@ -1,0 +1,7 @@
+.hello{
+    background: red;
+}
+
+:host {
+    background: green;
+}
